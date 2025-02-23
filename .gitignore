@@ -1,0 +1,46 @@
+# Ignorar arquivos de build e binários
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.exp
+*.lib
+*.log
+*.suo
+*.user
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+
+# Ignorar pastas de dependências
+packages/
+.vs/
+TestResults/
+
+# Ignorar pastas de dependências
+vs/
+Cashly/.vs/
+.vs/
+
+# Ignorar arquivos do Docker
+docker-compose.*
+**/docker-compose.*
+**/.dockerignore
+**/Dockerfile*
+**/.env
+
+# Ignorar arquivos do NuGet
+*.nupkg
+*.nuget.props
+*.nuget.targets
+
+# Ignorar arquivos de configuração do Visual Studio
+*.userprefs
+*.sln.docstates
+*.DotSettings

@@ -3,8 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35506.116 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{91E7DDFD-7504-4A2C-B082-C3FD302ECFDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{924D70CD-A935-4B83-8290-26F63EA47A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashly.Api", "src\Cashly.Api\Cashly.Api.csproj", "{76B62BDC-6AF5-4B46-A2AD-E62528280573}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76B62BDC-6AF5-4B46-A2AD-E62528280573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B62BDC-6AF5-4B46-A2AD-E62528280573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B62BDC-6AF5-4B46-A2AD-E62528280573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B62BDC-6AF5-4B46-A2AD-E62528280573}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76B62BDC-6AF5-4B46-A2AD-E62528280573} = {91E7DDFD-7504-4A2C-B082-C3FD302ECFDD}
 	EndGlobalSection
 EndGlobal
