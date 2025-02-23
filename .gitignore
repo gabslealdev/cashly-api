@@ -1,3 +1,4 @@
 # Ignorar pastas de dependências
 vs/
 Cashly/.vs/
+.vs/
