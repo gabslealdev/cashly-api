@@ -6,6 +6,9 @@
         public string Name { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
-        public DateTime RegisterDate { get; set; } 
+        public DateTime RegisterDate { get; set; }
+
+        public ICollection<Transaction> Transactions { get; set; } = [];
+        public ICollection<Wish> Wishes { get; set; } = []; 
     }
 }
