@@ -27,15 +27,18 @@ namespace Cashly.Domain.Entities
             DateTime RegisterDate = DateTime.Now;
         }
 
-        public ICollection<Transaction> Transactions { get; private set; } = [];
-        public ICollection<Wish> Wishes { get; private set; } = [];
+        public Cashflow Cashflow { get; set; }
+        public int CashflowId { get; set; }
+
+        public ICollection<Transaction> Transactions { get; set; } = [];
+        public ICollection<Goal> Goals { get; set; } = [];
 
         public void AddTransaction(Transaction transaction)
         {
             Transactions.Add(transaction);
         }
 
-        public void AddWish(Wish wish)
+        public void AddGoal(Goal wish)
         {
             Wishes.Add(wish);
         }

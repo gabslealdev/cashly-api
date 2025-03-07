@@ -1,20 +1,21 @@
-﻿
+﻿using Cashly.Domain.Exceptions;
+using Cashly.Domain.ValueObjects;
 
 namespace Cashly.Domain.Entities
 {
     public sealed class Category
     {
         public int Id { get; private set; }
-        public string Name { get; private set; } = string.Empty;
+        public CategoryName Name { get; private set; }
 
-        public Category(string name)
+        public Category(CategoryName name)
         {
             Name = name;
         }
 
-        public Category(int id, string name)
+        public Category(int id, CategoryName name)
         {
-            Id = id;
+            ValidateId(id);
             Name = name;
         }
 
@@ -25,7 +26,17 @@ namespace Cashly.Domain.Entities
         {
             Transactions.Add(transaction);
         }
-        
+        public void Update(CategoryName name)
+        {
+            Name = name;
+        }
+
+        private void ValidateId(int id)
+        {
+            DomainExceptionValidation.When(id < 0, "Error: Invalid value");
+            Id = id;
+        }
+
 
     }
 }

@@ -15,7 +15,7 @@ namespace Cashly.Domain.Entities
         public string? Description { get; private set; } = string.Empty;
         public TransactionType Type { get; private set; }
 
-        public Transaction(int id, decimal amount, DateTime date, string description, TransactionType type, User user, Category category )
+        public Transaction(int id, decimal amount, DateTime date, string description, TransactionType type, User user, Category category, Cashflow cashflow )
         {
             Id = id;
             Amount = amount;
@@ -26,13 +26,17 @@ namespace Cashly.Domain.Entities
             UserId = user.Id;
             Category = category;
             CategoryId = category.Id;
+            Cashflow = cashflow;
+            CashflowId = cashflow.Id;
 
         }
 
-        public int UserId { get; private set; }
-        public User User { get; private set; }
-        public int CategoryId { get; private set; }
-        public Category Category { get; private set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
+        public int CashflowId { get; set; }
+        public Cashflow Cashflow { get; set; }
 
     }
 }
