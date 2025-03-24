@@ -4,7 +4,7 @@ using Cashly.Domain.ValueObjects;
 
 namespace Cashly.Domain.Entities
 {
-    public sealed class Transaction(Cash amount, DateTime date, string description, TransactionType type, User user, Category category, Cashflow cashflow ) : Entity
+    public sealed class Transaction(Cash amount, DateTime date, string description, TransactionType type, Category category, Cashflow cashflow ) : Entity
     {
         public Cash Amount { get; private set; } = amount;
         public DateTime Date { get; private set; } = date;
