@@ -44,3 +44,5 @@ docker-compose.*
 *.userprefs
 *.sln.docstates
 *.DotSettings
+/Cashly/src/Cashly.Domain/ValueObjects/CategoryName.cs
+/Cashly/src/Cashly.Domain/ValueObjects/TargetAmount.cs

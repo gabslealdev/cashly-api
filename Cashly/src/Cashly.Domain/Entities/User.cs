@@ -1,47 +1,17 @@
-﻿using System.Globalization;
+﻿using Cashly.Domain.Entities.bases;
+using Cashly.Domain.ValueObjects;
 
-namespace Cashly.Domain.Entities
+namespace Cashly.Domain.Entities;
+
+public sealed class User(Name name, Email email, string passwordHash ) : Entity
 {
-    public sealed class User
-    {
-        public int Id { get; private set; }
-        public string Name { get; private set; } = string.Empty;
-        public string Email { get; private set; } = string.Empty;
-        public string Password { get; private set; } = string.Empty;
-        public DateTime RegisterDate { get; private set; }
+    public Name Name { get; private set; } = name;
+    public Email Email { get; private set; } = email;
+    public string PasswordHash { get; private set; } = passwordHash;
+    public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
+    public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
 
-        public User(string name, string email, string password)
-        {
-            Name = name;
-            Email = email;
-            Password = password;
-            DateTime RegisterDate = DateTime.Now;
-        }
+    public Cashflow? Cashflow { get; set; }
+    public int? CashflowId { get; set; }
 
-        public User(int id, string name, string email, string password)
-        {
-            Id = id;
-            Name = name;
-            Email = email;
-            Password = password;
-            DateTime RegisterDate = DateTime.Now;
-        }
-
-        public Cashflow Cashflow { get; set; }
-        public int CashflowId { get; set; }
-
-        public ICollection<Transaction> Transactions { get; set; } = [];
-        public ICollection<Goal> Goals { get; set; } = [];
-
-        public void AddTransaction(Transaction transaction)
-        {
-            Transactions.Add(transaction);
-        }
-
-        public void AddGoal(Goal wish)
-        {
-            Wishes.Add(wish);
-        }
-
-    }
 }

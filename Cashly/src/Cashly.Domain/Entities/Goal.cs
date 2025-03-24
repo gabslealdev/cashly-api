@@ -1,22 +1,22 @@
-﻿namespace Cashly.Domain.Entities
+﻿using Cashly.Domain.Entities.bases;
+using Cashly.Domain.Exceptions;
+using Cashly.Domain.ValueObjects;
+
+namespace Cashly.Domain.Entities
 {
-    public sealed class Goal
+    public sealed class Goal(Cash value, DeadlineGoal deadline, Cashflow cashflow) : Entity
     {
-        public int Id { get; private set; }
-        public decimal Amount { get; private set; }
-        public DateTime Deadline { get;  private set; }
+        public Cash Value { get; private set; } = value;
+        public DateTime Start { get; private set; } = DateTime.Now;
+        public DeadlineGoal Deadline { get; private set; } = deadline;
+        public Cashflow Cashflow { get; private set; } = cashflow;
+        public int CashflowId { get; private set; } = cashflow.Id;
 
-        public Goal(int id, decimal amount, DateTime deadline, User user)
+        public void SetStartDate(DateTime start)
         {
-            Id = id;
-            Amount = amount;
-            Deadline = deadline;
-            User = user;
-            UserId = user.Id;
+            DomainExceptionValidation.When(start > Deadline, "The start date cannot be later than the deadline");
+            DomainExceptionValidation.When(start < DateTime.UtcNow, "The start date cannot be in the past");
+            Start = start;
         }
-
-        public int UserId { get; set; }
-        public  User User { get; set; }
-
     }
 }
