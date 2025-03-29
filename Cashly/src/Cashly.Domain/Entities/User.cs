@@ -10,8 +10,6 @@ public sealed class User(Name name, Email email, string passwordHash ) : Entity
     public string PasswordHash { get; private set; } = passwordHash;
     public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
     public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
-
     public Cashflow? Cashflow { get; set; }
     public int? CashflowId { get; set; }
-
 }

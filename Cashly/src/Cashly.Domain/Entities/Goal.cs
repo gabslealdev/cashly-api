@@ -9,8 +9,9 @@ namespace Cashly.Domain.Entities
         public Cash Value { get; private set; } = value;
         public DateTime Start { get; private set; } = DateTime.Now;
         public DeadlineGoal Deadline { get; private set; } = deadline;
-        public Cashflow Cashflow { get; private set; } = cashflow;
-        public int CashflowId { get; private set; } = cashflow.Id;
+
+        public Cashflow Cashflow { get; set; } = cashflow;
+        public int CashflowId { get;  set; } = cashflow.Id;
 
         public void SetStartDate(DateTime start)
         {

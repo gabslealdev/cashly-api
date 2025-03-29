@@ -10,6 +10,7 @@ namespace Cashly.Domain.Entities
         public DateTime Date { get; private set; } = date;
         public string? Description { get; private set; } = description;
         public TransactionType Type { get; private set; } = type;
+
         public int CategoryId { get; set; } = category.Id;
         public Category Category { get; set; } = category;
         public int CashflowId { get; set; } = cashflow.Id;
