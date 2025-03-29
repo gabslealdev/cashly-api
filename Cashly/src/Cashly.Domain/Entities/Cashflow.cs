@@ -1,6 +1,5 @@
 ﻿using Cashly.Domain.Entities.bases;
 using Cashly.Domain.Enums;
-using Cashly.Domain.ValueObjects;
 
 namespace Cashly.Domain.Entities
 {
