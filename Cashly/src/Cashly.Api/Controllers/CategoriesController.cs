@@ -1,4 +1,5 @@
-﻿using Cashly.Communication.RequestRegisterCategoryJson;
+﻿using Cashly.Application.UseCases.Categories.Register;
+using Cashly.Communication.Requests.RequestRegisterCategoryJson;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,7 +12,10 @@ namespace Cashly.Api.Controllers
         [HttpPost]
         public IActionResult PostCategories([FromBody] RequestRegisterCategoryJson request)
         {
-            return Created();
+            var useCase = new RegisterCategoryUseCase();
+            var response = useCase.Execute(request);
+
+            return Created(string.Empty, response);
         }
     }
 }

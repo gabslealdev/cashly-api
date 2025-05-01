@@ -3,7 +3,7 @@ using Cashly.Domain.ValueObjects;
 
 namespace Cashly.Domain.Entities;
 
-public sealed class User(Name name, Email email, string passwordHash ) : Entity
+public sealed class User(int id, Name name, Email email, string passwordHash) : Entity(id)
 {
     public Name Name { get; private set; } = name;
     public Email Email { get; private set; } = email;

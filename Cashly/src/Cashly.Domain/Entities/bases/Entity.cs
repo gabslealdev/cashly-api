@@ -1,8 +1,15 @@
-﻿namespace Cashly.Domain.Entities.bases;
+﻿using Cashly.Domain.Exceptions;
+
+namespace Cashly.Domain.Entities.bases;
 
 public abstract class Entity
 {
     public virtual int Id { get; protected set; }
+    protected Entity(int id)
+    {
+        Validate(id);
+        Id = id;
+    }
 
     public override bool Equals(object? obj)
     {
@@ -37,6 +44,11 @@ public abstract class Entity
     public override int GetHashCode()
     {
         return (GetType().ToString() + Id).GetHashCode();
+    }
+
+    private void Validate(int id)
+    {
+        DomainExceptionValidation.When(id < 0, "Invalid Id value");
     }
 
 }

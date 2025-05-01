@@ -41,12 +41,10 @@ namespace Cashly.Domain.ValueObjects
             if (other is null) throw new ArgumentNullException(nameof(other));
             return Value.CompareTo(other.Value);
         }
-
         protected override bool EqualsCore(Cash other)
         {
             return Value == other.Value;
         }
-
         protected override decimal GetHashCodeCore()
         {
             decimal hashCode = Value.GetHashCode();

@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{91E7DDFD-7504-4A2C-B082-C3FD302ECFDD}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{924D70CD-A935-4B83-8290-26F63EA47A64}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashly.Api", "src\Cashly.Api\Cashly.Api.csproj", "{76B62BDC-6AF5-4B46-A2AD-E62528280573}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -29,6 +27,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashly.Exception", "src\Cashly.Exception\Cashly.Exception.csproj", "{883184DB-4FCC-4AFA-8806-F8506A18965C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashly.Infrastructure", "src\Cashly.Infrastructure\Cashly.Infrastructure.csproj", "{ABC627B0-8D34-4325-B786-D5361E97AA6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{55B1187A-9512-48E6-8AC1-8C2172492C9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashly.Domain.Tests", "Cashly.Domain.Tests\Cashly.Domain.Tests.csproj", "{55A0E38A-60CB-4701-A211-F9D84602A810}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +62,10 @@ Global
 		{ABC627B0-8D34-4325-B786-D5361E97AA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABC627B0-8D34-4325-B786-D5361E97AA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABC627B0-8D34-4325-B786-D5361E97AA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A0E38A-60CB-4701-A211-F9D84602A810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A0E38A-60CB-4701-A211-F9D84602A810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A0E38A-60CB-4701-A211-F9D84602A810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A0E38A-60CB-4701-A211-F9D84602A810}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,5 +77,6 @@ Global
 		{E9322ED1-2F15-40EA-AFFC-DB9955030289} = {91E7DDFD-7504-4A2C-B082-C3FD302ECFDD}
 		{883184DB-4FCC-4AFA-8806-F8506A18965C} = {91E7DDFD-7504-4A2C-B082-C3FD302ECFDD}
 		{ABC627B0-8D34-4325-B786-D5361E97AA6B} = {91E7DDFD-7504-4A2C-B082-C3FD302ECFDD}
+		{55A0E38A-60CB-4701-A211-F9D84602A810} = {55B1187A-9512-48E6-8AC1-8C2172492C9E}
 	EndGlobalSection
 EndGlobal

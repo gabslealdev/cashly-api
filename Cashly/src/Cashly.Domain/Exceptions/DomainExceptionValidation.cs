@@ -1,8 +1,6 @@
-﻿using System.Xml.Linq;
-
-namespace Cashly.Domain.Exceptions
+﻿namespace Cashly.Domain.Exceptions
 {
-    public class DomainExceptionValidation : Exception
+    public class DomainExceptionValidation : SystemException
     {
         public DomainExceptionValidation(string error) : base(error) { }
 

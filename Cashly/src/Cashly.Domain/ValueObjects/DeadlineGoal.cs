@@ -13,7 +13,7 @@ namespace Cashly.Domain.ValueObjects
             Date = date;
         }
 
-        private static void Validate(DateTime date) => DomainExceptionValidation.When(date <= DateTime.UtcNow, "The target deadline cannot be in the past");
+        private static void Validate(DateTime date) => DomainExceptionValidation.When(date <= DateTime.UtcNow.AddDays(30), "Deadline must be at least 30 days after from now.");
 
         protected override bool EqualsCore(DeadlineGoal other)
         {
@@ -27,7 +27,5 @@ namespace Cashly.Domain.ValueObjects
         }
 
         public static implicit operator DateTime(DeadlineGoal deadlineGoal) => deadlineGoal.Date;
-
-
     }
 }
