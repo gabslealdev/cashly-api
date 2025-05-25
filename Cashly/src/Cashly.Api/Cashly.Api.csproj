@@ -14,4 +14,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Cashly.Application\Cashly.Application.csproj" />
+    <ProjectReference Include="..\Cashly.Communication\Cashly.Communication.csproj" />
+    <ProjectReference Include="..\Cashly.Exception\Cashly.Exception.csproj" />
+    <ProjectReference Include="..\Cashly.Infrastructure\Cashly.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

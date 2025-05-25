@@ -1,14 +1,15 @@
-﻿namespace Cashly.Domain.Entities
-{
-    public class User
-    {
-        public int Id { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-        public DateTime RegisterDate { get; set; }
+﻿ using Cashly.Domain.Entities.bases;
+using Cashly.Domain.ValueObjects;
 
-        public ICollection<Transaction> Transactions { get; set; } = [];
-        public ICollection<Wish> Wishes { get; set; } = []; 
-    }
+namespace Cashly.Domain.Entities;
+
+public sealed class User(int id, Name name, Email email, string passwordHash) : Entity(id)
+{
+    public Name Name { get; private set; } = name;
+    public Email Email { get; private set; } = email;
+    public string PasswordHash { get; private set; } = passwordHash;
+    public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
+    public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
+    public Cashflow? Cashflow { get; set; }
+    public int? CashflowId { get; set; }
 }

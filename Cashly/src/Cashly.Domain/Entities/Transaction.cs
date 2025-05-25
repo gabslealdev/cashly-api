@@ -1,24 +1,38 @@
-﻿using Cashly.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Cashly.Domain.Entities.bases;
+using Cashly.Domain.Enums;
+using Cashly.Domain.Exceptions;
+using Cashly.Domain.ValueObjects;
 
 namespace Cashly.Domain.Entities
 {
-    public class Transaction
+    public sealed class Transaction(int id, Cash amount, DateTime date, string description, TransactionType type, Category category, Cashflow cashflow) : Entity(id)
     {
-        public int Id { get; set; }
-        public decimal Amount { get; set; }
-        public DateTime Date { get; set; }
-        public string Description { get; set; } = string.Empty;
-        public TransactionType Type { get; set; }
+        public Cash Amount { get; private set; } = amount;
+        public DateTime Date { get; private set; } = date;
+        public string? Description { get; private set; } = description;
+        public TransactionType Type { get; private set; } = type;
+        public TransactionStatus Status { get; private set; } = TransactionStatus.Scheduled;
+        public Category Category { get; } = ValidateCategory(category);
+        public int CategoryId { get; set; } = category.Id;
+        public Cashflow Cashflow { get; } = ValidateCashflow(cashflow);
+        public int CashflowId { get; set; } = cashflow.Id;
 
-        public int UserId { get; set; }
-        public User User { get; set; }
-        public int CategoryID { get; set; }
-        public Category Category { get; set; }
+        public void MarkAsCompleted()
+        {
+            if (Status == TransactionStatus.Canceled)
+                throw new DomainExceptionValidation("Cannot complete a canceled transaction");
+
+            Status = TransactionStatus.Completed;
+        }
+        public void MarkAsCanceled() 
+        {
+            if (Status == TransactionStatus.Completed)
+                throw new DomainExceptionValidation("Cannot cancel a completed transaction.");
+
+            Status = TransactionStatus.Canceled;
+        }
+        private static Category ValidateCategory(Category category) => category ?? throw new ArgumentNullException("Category cannot be null");
+        private static Cashflow ValidateCashflow(Cashflow cashflow) => cashflow ?? throw new ArgumentNullException("Cashflow cannot be null");
 
     }
 }
