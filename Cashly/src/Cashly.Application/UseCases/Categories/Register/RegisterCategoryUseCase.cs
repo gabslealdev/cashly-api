@@ -6,14 +6,14 @@ namespace Cashly.Application.UseCases.Categories.Register;
 
 public class RegisterCategoryUseCase
 {
-    public ResponseRegistredCategoryJson Execute(RequestRegisterCategoryJson request)
+    public RegisteredCategoryResponse Execute(RegisterCategoryRequest request)
     {
         Validate(request);
 
-        return new ResponseRegistredCategoryJson();
+        return new RegisteredCategoryResponse();
     }
 
-    private void Validate(RequestRegisterCategoryJson request)
+    private void Validate(RegisterCategoryRequest request)
     {
         var validator = new RegisterCategoryValidator();
 
@@ -25,8 +25,5 @@ public class RegisterCategoryUseCase
 
             throw new ErrorOnValidationException(errorMessages);
         }
-
-        
-
     }
 }

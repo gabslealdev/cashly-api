@@ -12,10 +12,10 @@ namespace Cashly.Domain.Entities
         public string? Description { get; private set; } = description;
         public TransactionType Type { get; private set; } = type;
         public TransactionStatus Status { get; private set; } = TransactionStatus.Scheduled;
-        public int CategoryId { get; set; } = category.Id;
         public Category Category { get; } = ValidateCategory(category);
-        public int CashflowId { get; set; } = cashflow.Id;
+        public int CategoryId { get; set; } = category.Id;
         public Cashflow Cashflow { get; } = ValidateCashflow(cashflow);
+        public int CashflowId { get; set; } = cashflow.Id;
 
         public void MarkAsCompleted()
         {

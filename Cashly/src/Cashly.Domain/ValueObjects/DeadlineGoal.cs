@@ -13,7 +13,7 @@ namespace Cashly.Domain.ValueObjects
             Date = date;
         }
 
-        private static void Validate(DateTime date) => DomainExceptionValidation.When(date <= DateTime.UtcNow.AddDays(30), "Deadline must be at least 30 days after from now.");
+        private static void Validate(DateTime date) => DomainExceptionValidation.When(date <= DateTime.UtcNow.AddDays(30), "Deadline must be at least 30 days after from now");
 
         protected override bool EqualsCore(DeadlineGoal other)
         {

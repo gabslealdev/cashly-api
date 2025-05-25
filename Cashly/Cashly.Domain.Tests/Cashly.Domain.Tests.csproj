@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Cashly.TestFixtures\Cashly.TestFixtures.csproj" />
     <ProjectReference Include="..\src\Cashly.Domain\Cashly.Domain.csproj" />
   </ItemGroup>
 

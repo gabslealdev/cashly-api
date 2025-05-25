@@ -1,6 +1,5 @@
 ﻿using Cashly.Application.UseCases.Categories.Register;
 using Cashly.Communication.Requests.RequestRegisterCategoryJson;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cashly.Api.Controllers
@@ -10,7 +9,7 @@ namespace Cashly.Api.Controllers
     public class CategoriesController : ControllerBase
     {
         [HttpPost]
-        public IActionResult PostCategories([FromBody] RequestRegisterCategoryJson request)
+        public IActionResult PostCategories([FromBody] RegisterCategoryRequest request)
         {
             var useCase = new RegisterCategoryUseCase();
             var response = useCase.Execute(request);

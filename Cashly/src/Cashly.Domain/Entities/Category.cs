@@ -8,10 +8,7 @@ namespace Cashly.Domain.Entities
     {
         public Name Name { get; private set; } = name;
         public string? Description { get; private set; } = description;
-
-
         public ICollection<Transaction> Transactions { get; private set; } = [];
-
         public void AddTransaction(Transaction transaction)
         {
             if (transaction is null)

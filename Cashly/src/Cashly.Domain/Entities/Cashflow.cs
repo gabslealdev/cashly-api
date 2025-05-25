@@ -8,7 +8,7 @@ namespace Cashly.Domain.Entities
     public sealed class Cashflow(int id, User user) : Entity(id)
     {
         public decimal CurrentBalance { get; private set; } = 0;
-        public CashflowStatus Status { get; private set; }
+        public CashflowStatus Status { get; private set; } = CashflowStatus.yellow;
         public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
         public User User { get; } = ValidateUser(user); 
         public int UserId { get; set; } = user.Id;
@@ -33,8 +33,8 @@ namespace Cashly.Domain.Entities
         public void RemoveTransaction(Transaction transaction) 
         {
             if (!Transactions.Contains(transaction))
-                throw new DomainExceptionValidation("This transaction does not exist");
- 
+                throw new ArgumentException(nameof(transaction));
+
             if (transaction.Type is TransactionType.Expense)
                 CurrentBalance += (decimal)transaction.Amount;
             else

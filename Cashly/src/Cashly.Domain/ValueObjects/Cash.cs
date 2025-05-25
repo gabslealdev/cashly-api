@@ -34,13 +34,13 @@ namespace Cashly.Domain.ValueObjects
         public override string ToString() => $"R$ {Value:N2}";
         public override bool Equals(object? obj) => obj is Cash other && Value == other.Value;
         public override int GetHashCode() => Value.GetHashCode();
-
-        public static explicit operator decimal(Cash cash) => cash.Value;
         public int CompareTo(Cash? other)
         {
             if (other is null) throw new ArgumentNullException(nameof(other));
             return Value.CompareTo(other.Value);
         }
+
+        public static explicit operator decimal(Cash cash) => cash.Value;
         protected override bool EqualsCore(Cash other)
         {
             return Value == other.Value;

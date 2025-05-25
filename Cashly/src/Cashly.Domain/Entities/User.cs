@@ -1,4 +1,4 @@
-﻿using Cashly.Domain.Entities.bases;
+﻿ using Cashly.Domain.Entities.bases;
 using Cashly.Domain.ValueObjects;
 
 namespace Cashly.Domain.Entities;

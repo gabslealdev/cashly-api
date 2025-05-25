@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{55B1187A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashly.Domain.Tests", "Cashly.Domain.Tests\Cashly.Domain.Tests.csproj", "{55A0E38A-60CB-4701-A211-F9D84602A810}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashly.TestFixtures", "Cashly.TestFixtures\Cashly.TestFixtures.csproj", "{ED5FC17F-3F64-47CB-B549-11759D46217D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +68,10 @@ Global
 		{55A0E38A-60CB-4701-A211-F9D84602A810}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55A0E38A-60CB-4701-A211-F9D84602A810}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55A0E38A-60CB-4701-A211-F9D84602A810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5FC17F-3F64-47CB-B549-11759D46217D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5FC17F-3F64-47CB-B549-11759D46217D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5FC17F-3F64-47CB-B549-11759D46217D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5FC17F-3F64-47CB-B549-11759D46217D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,5 +84,6 @@ Global
 		{883184DB-4FCC-4AFA-8806-F8506A18965C} = {91E7DDFD-7504-4A2C-B082-C3FD302ECFDD}
 		{ABC627B0-8D34-4325-B786-D5361E97AA6B} = {91E7DDFD-7504-4A2C-B082-C3FD302ECFDD}
 		{55A0E38A-60CB-4701-A211-F9D84602A810} = {55B1187A-9512-48E6-8AC1-8C2172492C9E}
+		{ED5FC17F-3F64-47CB-B549-11759D46217D} = {55B1187A-9512-48E6-8AC1-8C2172492C9E}
 	EndGlobalSection
 EndGlobal
