@@ -19,7 +19,7 @@ namespace Cashly.Domain.Entities
         public void AddTransaction(Transaction transaction)
         {
             if (transaction is null)
-                throw new ArgumentNullException(nameof(transaction));
+                throw new DomainExceptionValidation(nameof(transaction));
 
             if (transaction.Type is TransactionType.Expense)
                 AddExpense(transaction.Amount);
@@ -33,7 +33,7 @@ namespace Cashly.Domain.Entities
         public void RemoveTransaction(Transaction transaction) 
         {
             if (!Transactions.Contains(transaction))
-                throw new ArgumentException(nameof(transaction));
+                throw new DomainExceptionValidation(nameof(transaction));
 
             if (transaction.Type is TransactionType.Expense)
                 CurrentBalance += (decimal)transaction.Amount;
@@ -75,6 +75,6 @@ namespace Cashly.Domain.Entities
             UpdatedAt = DateTime.UtcNow;
             SetCashflowStatus();
         }
-        private static User ValidateUser(User user) => user ?? throw new ArgumentNullException("User cannot be null");
+        private static User ValidateUser(User user) => user ?? throw new DomainExceptionValidation("User cannot be null");
     }
 }

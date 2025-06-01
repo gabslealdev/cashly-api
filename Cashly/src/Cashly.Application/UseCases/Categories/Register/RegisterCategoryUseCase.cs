@@ -1,4 +1,4 @@
-﻿using Cashly.Communication.Requests.RequestRegisterCategoryJson;
+﻿using Cashly.Communication.Requests.RequestRegisterCategory;
 using Cashly.Communication.Responses.ResponseRegistredCategoryJson;
 using Cashly.Exception.ExceptionBase;
 
