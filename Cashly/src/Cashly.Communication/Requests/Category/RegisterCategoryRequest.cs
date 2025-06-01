@@ -1,4 +1,4 @@
-﻿namespace Cashly.Communication.Requests.RequestRegisterCategoryJson;
+﻿namespace Cashly.Communication.Requests.RequestRegisterCategory;
 
 public class RegisterCategoryRequest
 {

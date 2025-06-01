@@ -26,7 +26,7 @@ namespace Cashly.Domain.ValueObjects
         public static Cash operator -(Cash c1, Cash c2)
         {
             if (c1.Value < c2.Value)
-                throw new InvalidOperationException("Result of the operation must be greater than 0");
+                throw new DomainExceptionValidation("Result of the operation must be greater than 0");
 
             Cash sub = new Cash(c1.Value - c2.Value);
             return sub;
@@ -36,7 +36,7 @@ namespace Cashly.Domain.ValueObjects
         public override int GetHashCode() => Value.GetHashCode();
         public int CompareTo(Cash? other)
         {
-            if (other is null) throw new ArgumentNullException(nameof(other));
+            if (other is null) throw new DomainExceptionValidation(nameof(other));
             return Value.CompareTo(other.Value);
         }
 

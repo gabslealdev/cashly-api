@@ -1,5 +1,5 @@
 ﻿using Cashly.Application.UseCases.Categories.Register;
-using Cashly.Communication.Requests.RequestRegisterCategoryJson;
+using Cashly.Communication.Requests.RequestRegisterCategory;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cashly.Api.Controllers

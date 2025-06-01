@@ -1,4 +1,4 @@
-﻿using Cashly.Communication.Requests.RequestRegisterCategoryJson;
+﻿using Cashly.Communication.Requests.RequestRegisterCategory;
 using FluentValidation;
 
 namespace Cashly.Application.UseCases.Categories.Register

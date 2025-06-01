@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.communication\\responses\\category\\registeredcategoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|solutionrelative:src\\cashly.communication\\responses\\category\\registeredcategoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6088D39D-BE93-4ADE-A9A1-3AE28E4187CE}|tests\\Cashly.Aplication.Tests\\Cashly.Aplication.Tests.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\tests\\cashly.aplication.tests\\validator\\goal\\request\\requestgoalvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6088D39D-BE93-4ADE-A9A1-3AE28E4187CE}|tests\\Cashly.Aplication.Tests\\Cashly.Aplication.Tests.csproj|solutionrelative:tests\\cashly.aplication.tests\\validator\\goal\\request\\requestgoalvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.communication\\responses\\responseerrorjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|solutionrelative:src\\cashly.communication\\responses\\responseerrorjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C400C25-59E6-4D3F-9850-D688B385ADAC}|src\\Cashly.Application\\Cashly.Application.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.application\\usecases\\goals\\register\\registergoalvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C400C25-59E6-4D3F-9850-D688B385ADAC}|src\\Cashly.Application\\Cashly.Application.csproj|solutionrelative:src\\cashly.application\\usecases\\goals\\register\\registergoalvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.communication\\requests\\category\\registercategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|solutionrelative:src\\cashly.communication\\requests\\category\\registercategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6088D39D-BE93-4ADE-A9A1-3AE28E4187CE}|tests\\Cashly.Aplication.Tests\\Cashly.Aplication.Tests.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\tests\\cashly.aplication.tests\\validator\\transaction\\request\\requesttransactionvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6088D39D-BE93-4ADE-A9A1-3AE28E4187CE}|tests\\Cashly.Aplication.Tests\\Cashly.Aplication.Tests.csproj|solutionrelative:tests\\cashly.aplication.tests\\validator\\transaction\\request\\requesttransactionvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|solutionrelative:src\\cashly.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C400C25-59E6-4D3F-9850-D688B385ADAC}|src\\Cashly.Application\\Cashly.Application.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.application\\usecases\\transactions\\register\\registertransactionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C400C25-59E6-4D3F-9850-D688B385ADAC}|src\\Cashly.Application\\Cashly.Application.csproj|solutionrelative:src\\cashly.application\\usecases\\transactions\\register\\registertransactionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C400C25-59E6-4D3F-9850-D688B385ADAC}|src\\Cashly.Application\\Cashly.Application.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.application\\usecases\\categories\\register\\registercategoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C400C25-59E6-4D3F-9850-D688B385ADAC}|src\\Cashly.Application\\Cashly.Application.csproj|solutionrelative:src\\cashly.application\\usecases\\categories\\register\\registercategoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +30,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisteredCategoryResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Responses\\Category\\RegisteredCategoryResponse.cs",
-              "RelativeDocumentMoniker": "src\\Cashly.Communication\\Responses\\Category\\RegisteredCategoryResponse.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Responses\\Category\\RegisteredCategoryResponse.cs",
-              "RelativeToolTip": "src\\Cashly.Communication\\Responses\\Category\\RegisteredCategoryResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T18:20:15.184Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResponseErrorJson.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Responses\\ResponseErrorJson.cs",
-              "RelativeDocumentMoniker": "src\\Cashly.Communication\\Responses\\ResponseErrorJson.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Responses\\ResponseErrorJson.cs",
-              "RelativeToolTip": "src\\Cashly.Communication\\Responses\\ResponseErrorJson.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RequestGoalValidatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\tests\\Cashly.Aplication.Tests\\Validator\\Goal\\Request\\RequestGoalValidatorTests.cs",
+              "RelativeDocumentMoniker": "tests\\Cashly.Aplication.Tests\\Validator\\Goal\\Request\\RequestGoalValidatorTests.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\tests\\Cashly.Aplication.Tests\\Validator\\Goal\\Request\\RequestGoalValidatorTests.cs*",
+              "RelativeToolTip": "tests\\Cashly.Aplication.Tests\\Validator\\Goal\\Request\\RequestGoalValidatorTests.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCcAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T18:10:59.537Z",
+              "WhenOpened": "2025-06-01T03:32:04.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterCategoryRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Requests\\Category\\RegisterCategoryRequest.cs",
-              "RelativeDocumentMoniker": "src\\Cashly.Communication\\Requests\\Category\\RegisterCategoryRequest.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Requests\\Category\\RegisterCategoryRequest.cs*",
-              "RelativeToolTip": "src\\Cashly.Communication\\Requests\\Category\\RegisterCategoryRequest.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RequestTransactionValidatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\tests\\Cashly.Aplication.Tests\\Validator\\Transaction\\Request\\RequestTransactionValidatorTests.cs",
+              "RelativeDocumentMoniker": "tests\\Cashly.Aplication.Tests\\Validator\\Transaction\\Request\\RequestTransactionValidatorTests.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\tests\\Cashly.Aplication.Tests\\Validator\\Transaction\\Request\\RequestTransactionValidatorTests.cs",
+              "RelativeToolTip": "tests\\Cashly.Aplication.Tests\\Validator\\Transaction\\Request\\RequestTransactionValidatorTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T17:56:23.86Z",
+              "WhenOpened": "2025-06-01T01:57:30.832Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "f75b2721-58cf-4fa8-afce-e0ce45747c1a",
+        "Display": 1,
+        "X": 278,
+        "Y": 698,
+        "Width": 1459,
+        "Height": 717,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterTransactionValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Application\\UseCases\\Transactions\\Register\\RegisterTransactionValidator.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Application\\UseCases\\Transactions\\Register\\RegisterTransactionValidator.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Application\\UseCases\\Transactions\\Register\\RegisterTransactionValidator.cs",
+              "RelativeToolTip": "src\\Cashly.Application\\UseCases\\Transactions\\Register\\RegisterTransactionValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T11:20:39.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "src\\Cashly.Domain\\Entities\\Category.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Category.cs",
-              "RelativeToolTip": "src\\Cashly.Domain\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "RegisterGoalValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Application\\UseCases\\Goals\\Register\\RegisterGoalValidator.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Application\\UseCases\\Goals\\Register\\RegisterGoalValidator.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Application\\UseCases\\Goals\\Register\\RegisterGoalValidator.cs*",
+              "RelativeToolTip": "src\\Cashly.Application\\UseCases\\Goals\\Register\\RegisterGoalValidator.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T17:56:08.282Z",
+              "WhenOpened": "2025-05-31T11:20:23.684Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterCategoryValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Application\\UseCases\\Categories\\Register\\RegisterCategoryValidator.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Application\\UseCases\\Categories\\Register\\RegisterCategoryValidator.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Application\\UseCases\\Categories\\Register\\RegisterCategoryValidator.cs",
+              "RelativeToolTip": "src\\Cashly.Application\\UseCases\\Categories\\Register\\RegisterCategoryValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T11:19:58.551Z",
+              "EditorCaption": ""
             }
           ]
         }

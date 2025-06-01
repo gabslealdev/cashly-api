@@ -31,8 +31,8 @@ namespace Cashly.Domain.Entities
 
             Status = TransactionStatus.Canceled;
         }
-        private static Category ValidateCategory(Category category) => category ?? throw new ArgumentNullException("Category cannot be null");
-        private static Cashflow ValidateCashflow(Cashflow cashflow) => cashflow ?? throw new ArgumentNullException("Cashflow cannot be null");
+        private static Category ValidateCategory(Category category) => category ?? throw new DomainExceptionValidation("Category cannot be null");
+        private static Cashflow ValidateCashflow(Cashflow cashflow) => cashflow ?? throw new DomainExceptionValidation("Cashflow cannot be null");
 
     }
 }
