@@ -5,23 +5,32 @@ using Cashly.Domain.ValueObjects;
 
 namespace Cashly.Domain.Entities
 {
-    public sealed class Cashflow(int id, User user) : Entity(id)
+    public sealed class Cashflow : Entity
     {
-        public decimal CurrentBalance { get; private set; } = 0;
+
+        public decimal CurrentBalance { get; private set; } = 0.0m;
         public CashflowStatus Status { get; private set; } = CashflowStatus.yellow;
-        public DateTime UpdatedAt { get; private set; } = DateTime.UtcNow;
-        public User User { get; } = ValidateUser(user); 
-        public int UserId { get; set; } = user.Id;
+        public DateTimeOffset UpdatedAt { get; private set; } = DateTimeOffset.UtcNow;
+        public User User { get; private set; } = default!;
+        public int UserId { get; set; }
         public Goal? Goal { get; set; }
-        public int? GoalId { get; set; }
         public ICollection<Transaction> Transactions { get; private set; } = [];
+
+        public Cashflow(int id, User user) : base(id)
+        {
+            User = user;
+        }
+        private Cashflow()
+        {
+            
+        }
 
         public void AddTransaction(Transaction transaction)
         {
             if (transaction is null)
-                throw new ArgumentNullException(nameof(transaction));
+                throw new DomainExceptionValidation(nameof(transaction));
 
-            if (transaction.Type is TransactionType.Expense)
+            if (transaction.Type is TransactionType.expense)
                 AddExpense(transaction.Amount);
             else
                 AddIncome(transaction.Amount);
@@ -33,9 +42,9 @@ namespace Cashly.Domain.Entities
         public void RemoveTransaction(Transaction transaction) 
         {
             if (!Transactions.Contains(transaction))
-                throw new ArgumentException(nameof(transaction));
+                throw new DomainExceptionValidation(nameof(transaction));
 
-            if (transaction.Type is TransactionType.Expense)
+            if (transaction.Type is TransactionType.expense)
                 CurrentBalance += (decimal)transaction.Amount;
             else
                CurrentBalance -= (decimal)transaction.Amount;
@@ -49,19 +58,11 @@ namespace Cashly.Domain.Entities
             if (CurrentBalance < 0)
                 Status = CashflowStatus.red;
 
-            if (CurrentBalance == 0)
+            else if (CurrentBalance == 0)
                 Status = CashflowStatus.yellow;
 
-            if (CurrentBalance > 0)
+            else 
                 Status = CashflowStatus.green;
-        }
-        private void AddIncome(Cash income)
-        {
-            CurrentBalance += (decimal)income;
-        }
-        private void AddExpense(Cash expense)
-        {
-            CurrentBalance -= (decimal)expense;
         }
         public void RevertExpense(Cash expense)
         {
@@ -75,6 +76,14 @@ namespace Cashly.Domain.Entities
             UpdatedAt = DateTime.UtcNow;
             SetCashflowStatus();
         }
-        private static User ValidateUser(User user) => user ?? throw new ArgumentNullException("User cannot be null");
+        private void AddIncome(Cash income)
+        {
+            CurrentBalance += (decimal)income;
+        }
+        private void AddExpense(Cash expense)
+        {
+            CurrentBalance -= (decimal)expense;
+        }
+
     }
 }

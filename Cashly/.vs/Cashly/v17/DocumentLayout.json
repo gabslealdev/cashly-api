@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.communication\\responses\\category\\registeredcategoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|solutionrelative:src\\cashly.communication\\responses\\category\\registeredcategoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.infrastructure\\mappings\\transactionmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|solutionrelative:src\\cashly.infrastructure\\mappings\\transactionmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.communication\\responses\\responseerrorjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|solutionrelative:src\\cashly.communication\\responses\\responseerrorjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.infrastructure\\mappings\\cashflowmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|solutionrelative:src\\cashly.infrastructure\\mappings\\cashflowmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.communication\\requests\\category\\registercategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9322ED1-2F15-40EA-AFFC-DB9955030289}|src\\Cashly.Communication\\Cashly.Communication.csproj|solutionrelative:src\\cashly.communication\\requests\\category\\registercategoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.infrastructure\\mappings\\usermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|solutionrelative:src\\cashly.infrastructure\\mappings\\usermap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|solutionrelative:src\\cashly.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.infrastructure\\mappings\\categorymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|solutionrelative:src\\cashly.infrastructure\\mappings\\categorymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.domain\\entities\\cashflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|solutionrelative:src\\cashly.domain\\entities\\cashflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|solutionrelative:src\\cashly.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.domain\\entities\\goal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|solutionrelative:src\\cashly.domain\\entities\\goal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.infrastructure\\datacontext\\cashlydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC627B0-8D34-4325-B786-D5361E97AA6B}|src\\Cashly.Infrastructure\\Cashly.Infrastructure.csproj|solutionrelative:src\\cashly.infrastructure\\datacontext\\cashlydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|c:\\users\\gabriel\\projects\\cashlyapi\\cashly-api\\cashly\\src\\cashly.domain\\valueobjects\\deadlinegoal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9368BDBD-710A-408D-B8AA-215D9B5AB3C0}|src\\Cashly.Domain\\Cashly.Domain.csproj|solutionrelative:src\\cashly.domain\\valueobjects\\deadlinegoal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +46,153 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RegisteredCategoryResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Responses\\Category\\RegisteredCategoryResponse.cs",
-              "RelativeDocumentMoniker": "src\\Cashly.Communication\\Responses\\Category\\RegisteredCategoryResponse.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Responses\\Category\\RegisteredCategoryResponse.cs",
-              "RelativeToolTip": "src\\Cashly.Communication\\Responses\\Category\\RegisteredCategoryResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA7AAAAAAAAAA==",
+              "Title": "TransactionMap.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\Mappings\\TransactionMap.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Infrastructure\\Mappings\\TransactionMap.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\Mappings\\TransactionMap.cs",
+              "RelativeToolTip": "src\\Cashly.Infrastructure\\Mappings\\TransactionMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T18:20:15.184Z",
+              "WhenOpened": "2025-06-06T16:03:51.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ResponseErrorJson.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Responses\\ResponseErrorJson.cs",
-              "RelativeDocumentMoniker": "src\\Cashly.Communication\\Responses\\ResponseErrorJson.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Responses\\ResponseErrorJson.cs",
-              "RelativeToolTip": "src\\Cashly.Communication\\Responses\\ResponseErrorJson.cs",
+              "Title": "CashflowMap.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\Mappings\\CashflowMap.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Infrastructure\\Mappings\\CashflowMap.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\Mappings\\CashflowMap.cs",
+              "RelativeToolTip": "src\\Cashly.Infrastructure\\Mappings\\CashflowMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T11:11:37.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CashlyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\DataContext\\CashlyDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Infrastructure\\DataContext\\CashlyDbContext.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\DataContext\\CashlyDbContext.cs",
+              "RelativeToolTip": "src\\Cashly.Infrastructure\\DataContext\\CashlyDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwB0AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T11:26:02.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeadlineGoal.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\ValueObjects\\DeadlineGoal.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Domain\\ValueObjects\\DeadlineGoal.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\ValueObjects\\DeadlineGoal.cs",
+              "RelativeToolTip": "src\\Cashly.Domain\\ValueObjects\\DeadlineGoal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T11:17:38.32Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "e93aac11-6897-41b7-87f6-8ac8dc0e3670",
+        "Display": 1,
+        "X": 461,
+        "Y": 548,
+        "Width": 1484,
+        "Height": 957,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryMap.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\Mappings\\CategoryMap.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Infrastructure\\Mappings\\CategoryMap.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\Mappings\\CategoryMap.cs",
+              "RelativeToolTip": "src\\Cashly.Infrastructure\\Mappings\\CategoryMap.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T16:24:22.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Goal.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Goal.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Domain\\Entities\\Goal.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Goal.cs",
+              "RelativeToolTip": "src\\Cashly.Domain\\Entities\\Goal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T18:10:59.537Z",
+              "WhenOpened": "2025-06-06T16:07:56.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Domain\\Entities\\Transaction.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Transaction.cs",
+              "RelativeToolTip": "src\\Cashly.Domain\\Entities\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T16:07:57.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterCategoryRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Requests\\Category\\RegisterCategoryRequest.cs",
-              "RelativeDocumentMoniker": "src\\Cashly.Communication\\Requests\\Category\\RegisterCategoryRequest.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Communication\\Requests\\Category\\RegisterCategoryRequest.cs*",
-              "RelativeToolTip": "src\\Cashly.Communication\\Requests\\Category\\RegisterCategoryRequest.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UserMap.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\Mappings\\UserMap.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Infrastructure\\Mappings\\UserMap.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Infrastructure\\Mappings\\UserMap.cs",
+              "RelativeToolTip": "src\\Cashly.Infrastructure\\Mappings\\UserMap.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCYAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T17:56:23.86Z",
+              "WhenOpened": "2025-06-05T12:09:22.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "src\\Cashly.Domain\\Entities\\Category.cs",
-              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Category.cs",
-              "RelativeToolTip": "src\\Cashly.Domain\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Cashflow.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Cashflow.cs",
+              "RelativeDocumentMoniker": "src\\Cashly.Domain\\Entities\\Cashflow.cs",
+              "ToolTip": "C:\\Users\\Gabriel\\Projects\\CashlyApi\\cashly-api\\Cashly\\src\\Cashly.Domain\\Entities\\Cashflow.cs",
+              "RelativeToolTip": "src\\Cashly.Domain\\Entities\\Cashflow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T17:56:08.282Z",
+              "WhenOpened": "2025-06-06T11:13:28.254Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

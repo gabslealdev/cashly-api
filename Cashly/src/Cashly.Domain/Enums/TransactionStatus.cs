@@ -2,8 +2,8 @@
 {
     public enum TransactionStatus
     {
-        Scheduled,
-        Completed,
-        Canceled
+        scheduled,
+        completed,
+        canceled
     }
 }

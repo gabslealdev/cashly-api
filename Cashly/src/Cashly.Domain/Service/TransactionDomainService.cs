@@ -8,12 +8,12 @@ namespace Cashly.Domain.Service
     {
         public void CancelTransaction(Transaction transaction, Cashflow cashflow)
         {
-            if (transaction.Status == TransactionStatus.Completed)
+            if (transaction.Status == TransactionStatus.completed)
                 throw new DomainExceptionValidation("Cannot cancel a completed transaction");
 
-            if (transaction.Status == TransactionStatus.Scheduled)
+            if (transaction.Status == TransactionStatus.scheduled)
             {
-                if (transaction.Type == TransactionType.Expense)
+                if (transaction.Type == TransactionType.expense)
                     cashflow.RevertExpense(transaction.Amount);
                 else
                     cashflow.RevertIncome(transaction.Amount);
