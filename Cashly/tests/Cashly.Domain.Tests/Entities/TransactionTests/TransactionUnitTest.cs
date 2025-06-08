@@ -73,7 +73,7 @@ namespace Cashly.Domain.Tests.Entities.TransactionTests
             transaction.MarkAsCompleted();
 
             // ASSERT
-            transaction.Status.ShouldBe(TransactionStatus.Completed);
+            transaction.Status.ShouldBe(TransactionStatus.completed);
         }
 
         [Fact(DisplayName = "Cancel a scheduled transaction result object valid state ")]
@@ -86,7 +86,7 @@ namespace Cashly.Domain.Tests.Entities.TransactionTests
             transaction.MarkAsCanceled();
 
             // ASSERT
-            transaction.Status.ShouldBe(TransactionStatus.Canceled);
+            transaction.Status.ShouldBe(TransactionStatus.canceled);
         }
 
         [Fact(DisplayName = "Cancel a completed transaction result DomainExceptionValidation")]

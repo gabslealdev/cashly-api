@@ -25,7 +25,7 @@ public class GoalUnitTest
 
         // ACT
         Action action = () => goal.SetDeadline(
-            faker.Date.Future(refDate: (DateTime)goal.Deadline, yearsToGoForward: 1));
+            faker.Date.FutureOffset(refDate: (DateTimeOffset)goal.Deadline, yearsToGoForward: 1));
 
         // ASSERT
         action.ShouldNotThrow();
@@ -39,7 +39,7 @@ public class GoalUnitTest
         var goal = GoalBuilder.BuildValidGoal();
 
         // ACT
-        Action action = () => goal.SetDeadline(faker.Date.Soon());
+        Action action = () => goal.SetDeadline(faker.Date.SoonOffset());
 
         // ASSERT
         action.ShouldThrow<DomainExceptionValidation>().Message.ShouldBe("The new deadline cannot be earlier than the current deadline");

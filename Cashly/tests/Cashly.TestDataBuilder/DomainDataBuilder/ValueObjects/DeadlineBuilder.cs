@@ -10,7 +10,7 @@ namespace Cashly.TestFixtures.Fixtures.ValueObjects
             var faker = new Faker();
 
             return new DeadlineGoal(
-                faker.Date.Future().AddDays(30)
+                faker.Date.FutureOffset().AddDays(30)
                 );
         }
         public static DeadlineGoal CreateInvalidDeadlineGoal()
@@ -18,7 +18,7 @@ namespace Cashly.TestFixtures.Fixtures.ValueObjects
             var faker = new Faker();
 
             return new DeadlineGoal(
-                faker.Date.Between(DateTime.Now, DateTime.Now.AddDays(30))
+                faker.Date.BetweenOffset(DateTimeOffset.Now.Date, DateTimeOffset.Now.Date.AddDays(30))
                 );
         }
 

@@ -5,15 +5,15 @@ namespace Cashly.Domain.ValueObjects
 {
     public sealed class DeadlineGoal: ValueObject<DeadlineGoal>
     {
-        public DateTime Date { get; }
+        public DateTimeOffset Date { get; }
 
-        public DeadlineGoal(DateTime date)
+        public DeadlineGoal(DateTimeOffset date)
         {
             Validate(date);
             Date = date;
         }
 
-        private static void Validate(DateTime date) => DomainExceptionValidation.When(date <= DateTime.Today.AddDays(30), "Deadline must be at least 30 days after from now");
+        private static void Validate(DateTimeOffset date) => DomainExceptionValidation.When(date <= DateTimeOffset.Now.Date.AddDays(30), "Deadline must be at least 30 days after from now");
 
         protected override bool EqualsCore(DeadlineGoal other)
         {
@@ -26,6 +26,6 @@ namespace Cashly.Domain.ValueObjects
             return hashCode;
         }
 
-        public static implicit operator DateTime(DeadlineGoal deadlineGoal) => deadlineGoal.Date;
+        public static implicit operator DateTimeOffset(DeadlineGoal deadlineGoal) => deadlineGoal.Date;
     }
 }

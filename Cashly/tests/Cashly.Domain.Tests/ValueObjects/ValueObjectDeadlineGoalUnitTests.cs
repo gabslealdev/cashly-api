@@ -33,7 +33,7 @@ namespace Cashly.Domain.Tests.ValueObjects
         {
             // ARRANGE
             var faker = new Faker();
-            var date = faker.Date.Future().AddDays(60);
+            var date = faker.Date.FutureOffset().AddDays(60);
             var deadlineGoalA = new DeadlineGoal(date);
             var deadlineGoalB = new DeadlineGoal(date);
 
@@ -48,8 +48,8 @@ namespace Cashly.Domain.Tests.ValueObjects
         public void Equals_WithDifferentValues_ResultShouldBeFalse()
         {
             var faker = new Faker();
-            var dateA = faker.Date.Future().AddDays(60);
-            var dateB = faker.Date.Future().AddDays(90);
+            var dateA = faker.Date.FutureOffset().AddDays(60);
+            var dateB = faker.Date.FutureOffset().AddDays(90);
             var deadlineGoalA = new DeadlineGoal(dateA);
             var deadlineGoalB = new DeadlineGoal(dateB);
 
@@ -65,7 +65,7 @@ namespace Cashly.Domain.Tests.ValueObjects
         {
             // ARRANGE
             var faker = new Faker();
-            var date = faker.Date.Future().AddDays(60);
+            var date = faker.Date.FutureOffset().AddDays(60);
             var deadlineGoalA = new DeadlineGoal(date);
             var deadlineGoalB = new DeadlineGoal(date);
             var expectedHash = deadlineGoalA.GetHashCode();
@@ -83,13 +83,13 @@ namespace Cashly.Domain.Tests.ValueObjects
         {
             // ARRANGE
             var faker = new Faker();
-            var deadlineGoal = new DeadlineGoal(faker.Date.Future().AddDays(30));
+            var deadlineGoal = new DeadlineGoal(faker.Date.FutureOffset().AddDays(30));
 
             // ACT
-            var result = (DateTime)deadlineGoal;
+            var result = (DateTimeOffset)deadlineGoal;
 
             // ASSERT
-            result.GetType().ShouldBe(typeof(DateTime));
+            result.GetType().ShouldBe(typeof(DateTimeOffset));
         }
 
     }

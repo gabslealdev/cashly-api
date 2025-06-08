@@ -12,7 +12,7 @@ namespace Cashly.TestDataBuilder.CommunicationDataBuilder.Goal.Request
             return new RegisterGoalRequest
             {
                 Value = faker.Random.Decimal(400, 7000),
-                Deadline = faker.Date.Future(refDate: DateTime.Today.AddDays(31))
+                Deadline = faker.Date.FutureOffset(refDate: DateTimeOffset.Now.Date.AddDays(30))
             };
         }
     }

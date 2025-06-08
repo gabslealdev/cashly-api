@@ -43,7 +43,7 @@ namespace Cashly.Aplication.Tests.Validator.Goal.Request
             // ARRANGE
             var validator = new RegisterGoalValidator();
             var request = RegisterGoalRequestBuilder.Build();
-            request.Deadline = DateTime.UtcNow;
+            request.Deadline = DateTimeOffset.UtcNow;
 
             // ACT
             var result = validator.Validate(request);

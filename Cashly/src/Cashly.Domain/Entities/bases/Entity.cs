@@ -5,11 +5,14 @@ namespace Cashly.Domain.Entities.bases;
 public abstract class Entity
 {
     public virtual int Id { get; protected set; }
+
     protected Entity(int id)
     {
         Validate(id);
         Id = id;
     }
+    protected Entity() { }
+
 
     public override bool Equals(object? obj)
     {

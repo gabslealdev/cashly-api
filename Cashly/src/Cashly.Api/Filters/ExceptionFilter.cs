@@ -29,8 +29,8 @@ namespace Cashly.Api.Filters
         {
             if(context.Exception is ErrorOnValidationException)
             {
-                var ex = context.Exception as ErrorOnValidationException; 
-                var errorResponse = new ResponseErrorJson(ex.Errors);
+                var ex = context.Exception as ErrorOnValidationException;
+                var errorResponse = new ResponseErrorJson(ex!.Errors);
 
                 context.HttpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
                 context.Result = new BadRequestObjectResult(errorResponse);

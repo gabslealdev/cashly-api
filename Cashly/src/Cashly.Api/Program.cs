@@ -1,7 +1,11 @@
 using Cashly.Api.Filters;
+using Cashly.Infrastructure.DataContext;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<CashlyDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 builder.Services.AddControllers();

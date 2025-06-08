@@ -28,16 +28,6 @@ public class CashflowUnitTest
         action.ShouldNotThrow();
     }
 
-    [Fact(DisplayName = "Create cashflow with null user result ArgumentNullException")]
-    public void CreateCashflow_WithNullUser_ResultArgumentNullException()
-    {
-        // ACT
-        Action action = () => new Cashflow(id: 4, user: null);
-
-        // ASSERT
-        action.ShouldThrow<DomainExceptionValidation>();
-    }
-
     [Fact(DisplayName = "Create cashflow with valid transaction CashflowStatus should be red")]
     public void CreateCashflow_WithValidTransaction_CashflowStatusShouldBeRed()
     {

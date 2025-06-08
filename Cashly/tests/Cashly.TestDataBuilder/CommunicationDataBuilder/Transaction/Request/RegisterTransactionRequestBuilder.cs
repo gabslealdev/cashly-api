@@ -13,7 +13,7 @@ namespace Cashly.TestDataBuilder.CommunicationDataBuilder.Transaction.Request
             return new RegisterTransactionRequest
             {
                 Amount = faker.Random.Decimal(1, 2000),
-                Date = faker.Date.Soon(),
+                Date = faker.Date.SoonOffset(),
                 Description = faker.Commerce.ProductDescription(),
                 Type = faker.PickRandom<TransactionTypeRequest>(),
                 CreatedCategoryId = faker.Random.Int(),

@@ -13,7 +13,7 @@ public static class TransactionBuilder
         return new Transaction(
             id: faker.Random.Int(1, 1000),
             amount: new Cash(faker.Random.Decimal(0.9m, 4999.99m)),
-            date: faker.Date.Soon(),
+            date: faker.Date.SoonOffset(),
             description: faker.Commerce.ProductDescription(),
             type: faker.PickRandom<TransactionType>(),
             category: CategoryBuilder.BuildValidCategory(),
@@ -28,9 +28,9 @@ public static class TransactionBuilder
         return new Transaction(
             id: faker.Random.Int(1, 1000),
             amount: new Cash(faker.Random.Decimal(0.9m, 4999.99m)),
-            date: faker.Date.Soon(),
+            date: faker.Date.SoonOffset(),
             description: faker.Commerce.ProductDescription(),
-            type: TransactionType.Expense,
+            type: TransactionType.expense,
             category: CategoryBuilder.BuildValidCategory(),
             cashflow: CashflowBuilder.BuildValidCashflow()
             );
@@ -43,9 +43,9 @@ public static class TransactionBuilder
         return new Transaction(
             id: faker.Random.Int(1, 1000),
             amount: new Cash(faker.Random.Decimal(0.9m, 4999.99m)),
-            date: faker.Date.Soon(),
+            date: faker.Date.SoonOffset(),
             description: faker.Commerce.ProductDescription(),
-            type: TransactionType.Income,
+            type: TransactionType.income,
             category: CategoryBuilder.BuildValidCategory(),
             cashflow: CashflowBuilder.BuildValidCashflow()
             );
